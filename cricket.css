@@ -1,0 +1,25 @@
+.button {
+	background-color: blue;
+	color: white;
+	width: 200px;
+	text-align: center;
+	font-family: courier;
+	font-size: 400%;
+}
+
+.button:hover {
+	background-color: dodgerBlue;
+}
+
+#ball {
+	background-color: lime;
+	width: auto;
+}
+
+#name {
+	background-color: yellow;
+}
+
+#name:hover {
+	background-color: gold;
+}
