@@ -27,6 +27,7 @@ bowl.opts[Math.floor(Math.random() * bowl.opts.length)+1];
 bowl.el.addEventListener("click", bowl.meth);
 document.querySelector("#name").addEventListener("click",
 randomName);
+document.querySelector("#force-wicket").addEventListener("click", forceWicket);
 
 var ball = document.querySelector("#ball");
 
@@ -41,7 +42,6 @@ bowl.optsFunc("wide", 2);
 bowl.optsFunc("noball", 2);
 bowl.optsFunc((Math.floor(Math.random()*4)+1)+" byes", 2);
 bowl.optsFunc((Math.floor(Math.random()*2)+1)+" leg byes", 2);
-bowl.optsFunc("5 penalties", 1);
 
 function randomName () {
 	name = "";
@@ -55,4 +55,12 @@ function randomName () {
 		randomName()
 	};
 	alert(name);
+}
+
+function forceWicket() {
+	alert("wicket");
+	var t = ["caught", "caught", "caught",
+"bowled", "bowled", "bowled", "LBW", "LBW", "LBW", "stumped",
+"stumped", "run out", "run out", "run out", "hit wicket"];
+	ball.innerText = t[Math.floor(Math.random()*t.length)];
 }

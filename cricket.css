@@ -23,3 +23,11 @@
 #name:hover {
 	background-color: gold;
 }
+
+#force-wicket {
+	background-color: crimson;
+}
+
+#force-wicket:hover {
+	background-color: salmon;
+}
